@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        ePAPER - PESQUISA
+    </title>
+    <link href="./src/css/bts.min.css" rel="stylesheet" />
+    <link href="./src/css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <a href="./cadastro.html">
+        // Cadastrar // 
+    </a>
+    <a href="./pesquisa.html">
+        // Pesquisar //
+    </a>
+    <div class="container-fluid mt--12">
+        <div class="row mt-5">
+            <div class="col-xl-12 mb-5 mb-xl-0">
+                <div class="card shadow">
+                    <div class="card-header border-0">
+                        <div class="row align-items-center">
+                            <div id="listaDiv" class="col">
+                                <ul id='lista'>
+                                </ul>
+                                <button id="prevPage">prevPage</button>
+                                <button id="proxPage">proxPage</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src='https://unpkg.com/axios/dist/axios.min.js'></script>
+        <script src="./src/dbAcess/listarCad_old.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        ePAPER - PESQUISA
+    </title>
+    <link href="./src/css/bts.min.css" rel="stylesheet" />
+    <link href="./src/css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <a href="./cadastro.html">
+        // Cadastrar //
+    </a>
+    <a href="./listaCad.html">
+        // Cadastrados //
+    </a>
+    <div class="container-fluid mt--12">
+        <div class="row mt-5">
+            <div class="col-xl-12 mb-5 mb-xl-0">
+                <div class="card shadow">
+                    <div class="card-header border-0">
+                        <div class="row align-items-center">
+                            <div class="col">
+                              <h3 class="mb-0">Pesquisa</h3>
+                            </div>
+                          </div>
+                        <div class="row mt-3 align-items-center">
+                            <div class="col">
+                                <form id="searchForm">
+                                    <!--  FORMULARIO   -->
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Número do termo</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="termNumber"
+                                                    placeholder="00000000">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <label>Nome</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="name"
+                                                    placeholder="Insira o nome da pessoa">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label>Número da folha</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="pageNumber"
+                                                    placeholder="00000000">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label>Data Inicial</label>
+                                            <div class="form-group">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">
+                                                            <i class="ni ni-calendar-grid-58"></i>
+                                                        </span>
+                                                    </div>
+                                                    <input class="form-control datepicker" id="date"
+                                                        placeholder="Selec. a data" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label>Data Final</label>
+                                            <div class="form-group">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">
+                                                            <i class="ni ni-calendar-grid-58"></i>
+                                                        </span>
+                                                    </div>
+                                                    <input class="form-control datepicker" id="date2"
+                                                        placeholder="Selec. a data" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                            </div>
+                                        </div>
+                                        <div class="col text-right">
+                                            <input type="submit" class="btn btn-primary" value="Enviar">
+                                        </div>
+                                </form>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h3>Resultado:</h3>
+                                <div class="row">
+                                    <ul id='lista'>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='https://unpkg.com/axios/dist/axios.min.js'></script>
+    <script src="./src/dbAcess/pesquisa.js"></script>
+
+</body>
+
+</html>
